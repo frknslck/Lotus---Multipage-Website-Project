@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+header{
+    background-color: #35424a;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 5px solid #de3b78;
+}
+
+header h1{
+    color:white;
+    font-size:2rem;
+}
+
+header h1 span{
+    color:#de3b78;
+    font-size:2rem;
+}
+
+header nav{
+    margin-left: 2rem;
+}
+
+header nav a{
+    position: relative;
+    color:white;
+    width: fit-content;
+    margin-right: 3rem;
+    text-decoration: none;
+    font-size:1.7rem;
+    font-weight: 600;
+}
+
+header nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: white;
+    bottom: -5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+header nav a:hover{
+    color:#de3b78;
+}
+
+a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+#colored{
+    color:#de3b78;
+}
+
+.banner{
+    background-image: url(images/showcase.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    height: calc(45vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1{
+    font-size: 4rem;
+    color:white;
+    padding-bottom: 1rem;
+}
+
+.banner p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.subscribe{
+    background-color: #35424a;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.subscribe p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.subscribe input{
+    border: none;
+    outline: none;
+}
+
+.subscribe input[type="email"]{
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    padding-left: 0.5rem
+}
+
+.subscribe input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    background-color: #ef7925;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.subscribe input[type="submit"]:hover{
+    opacity: 0.9;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: calc(40vh - 100px);
+}
+
+.info .html img, 
+.info .css img, 
+.info .graphic img{
+    width: 100px;
+    height: 100px;
+}
+
+.html, .css, .graphic{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+footer img{
+    width: 150px;
+}
+
+footer{
+    background-color: #35424a;
+    width: 100%;
+    height: 130px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.about{
+    width: 100%;
+    height: calc(100vh - 330px);
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.about .aboutus {
+    padding: 1rem;
+}
+
+.about .aboutus p, 
+.about .aboutus h1{
+    padding: 1rem;
+}
+
+.about .aboutus p:nth-child(3){
+    background-color: #35424a;
+    color: white;
+}
+
+.about .whatwedo {
+    padding: 1rem;
+    background-color: #35424a;
+    height: fit-content;
+    color: white;
+}
+
+.about .whatwedo p, 
+.about .whatwedo h1{
+    padding: 2rem;
+}
+
+.services{
+    width: 100%;
+    height: calc(100vh - 330px);
+    display:flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.services .servicesleft {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.services .servicesleft > h1{
+    padding: 0.75rem;
+}
+
+.services .servicesleft .wb1,
+.services .servicesleft .wb2,
+.services .servicesleft .wb3{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #e6e6e6;
+}
+
+.servicesright{
+    background-color: #35424a;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.servicesright h1{
+    margin-bottom: 1rem;
+}
+
+.servicesright input{
+    margin-bottom: 1rem;
+}
+
+.servicesright input[type="text"],
+.servicesright input[type="email"]{
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    padding-left: 0.5rem
+}
+
+.servicesright textarea{
+    resize: none;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem
+}
+
+.servicesright button{
+    width: 100px;
+    height: 30px;
+    background-color: #ef7925;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.servicesright button:hover{
+    opacity: 0.9;
+}
