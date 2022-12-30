@@ -13,7 +13,7 @@ body{
 header{
     background-color: #35424a;
     width: 100%;
-    height: 100px;
+    height: 10vh;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -78,7 +78,7 @@ a:hover::before {
     background-position: center;
     background-size: 100%;
     width: 100%;
-    height: calc(45vh - 100px);
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,7 +99,7 @@ a:hover::before {
 .subscribe{
     background-color: #35424a;
     width: 100%;
-    height: 100px;
+    height: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,7 +142,7 @@ a:hover::before {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: calc(40vh - 100px);
+    height: 30vh;
 }
 
 .info .html img, 
@@ -162,13 +162,13 @@ a:hover::before {
 }
 
 footer img{
-    width: 150px;
+    height: 75%;
 }
 
 footer{
     background-color: #35424a;
     width: 100%;
-    height: 130px;
+    height: 15vh;
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -181,7 +181,7 @@ footer{
 
 .about{
     width: 100%;
-    height: calc(100vh - 330px);
+    height: 70vh;
     display:flex;
     justify-content: center;
     gap: 1rem;
@@ -216,7 +216,7 @@ footer{
 
 .services{
     width: 100%;
-    height: calc(100vh - 330px);
+    height: 70vh;
     display:flex;
     justify-content: space-evenly;
     gap: 1rem;
